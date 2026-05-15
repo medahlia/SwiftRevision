@@ -10,7 +10,7 @@ print("from Celsius: \(celsius) \nto Fahrenheit: \(fahrenheit)")
 */
 
 
-// checkpoin 3 | D-6
+// checkpoint 3 | D-6
 // MARK: fizz buzz
 /*
 for number in 1...100 {
