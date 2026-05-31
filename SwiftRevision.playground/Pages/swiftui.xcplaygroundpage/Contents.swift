@@ -38,7 +38,7 @@ struct SliderView: View {
 PlaygroundPage.current.setLiveView(SliderView())
 */
 
-
+/*
 struct ContentView: View {
     var body: some View {
         Text("Big Red Text")
@@ -50,3 +50,11 @@ struct ContentView: View {
     }
 }
 PlaygroundPage.current.setLiveView(ContentView())
+*/
+
+struct ShapeView: View {
+    var body: some View {
+        Triangle()
+            .stroke(Color.green, :)
+    }
+}

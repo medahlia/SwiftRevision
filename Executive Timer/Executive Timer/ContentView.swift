@@ -1,23 +1,27 @@
-//
-//  ContentView.swift
-//  Executive Timer
-//
-//  Created by Home on 31.05.2026.
-//
-
 import SwiftUI
+import Combine
+
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            TimerView()
+                .padding()
+                .tabItem({
+                    Label("Timer", systemImage: "timer")
+                })
+                .tag("Timer")
+            
+            TimerSettingsView()
+                .padding()
+                .tabItem({
+                    Label("Settings", systemImage: "gear")
+                })
+                .tag("Settings")
         }
-        .padding()
     }
 }
+
 
 #Preview {
     ContentView()
