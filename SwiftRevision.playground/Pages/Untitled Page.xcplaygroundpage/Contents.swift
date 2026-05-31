@@ -36,5 +36,3 @@ for number in 1...100 {
     print(output.isEmpty ? number : output)
 }
 */
-
-
